@@ -6,6 +6,19 @@ class testingTest {
     void sum() {
         assertEquals(4, testing.add(2, 2));
     }
+    
+    @org.junit.jupiter.api.Test
+    void mul() {
+        assertAll(() -> assertEquals(4, testing.multiply(2, 2)),
+                () -> assertEquals(-4, testing.multiply(2, -2)),
+                () -> assertEquals(4, testing.multiply(-2, -2)),
+                () -> assertEquals(0, testing.multiply(1, 0)),
+                () -> assertEquals(0, testing.multiply(1, 0))
+
+        );
+    }
+
+    
 
     
 
