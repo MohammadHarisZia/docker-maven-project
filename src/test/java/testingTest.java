@@ -4,7 +4,7 @@ class testingTest {
 
     @org.junit.jupiter.api.Test
     void sum() {
-        assertEquals(4, testing.add(2, 2));
+        assertEquals(2, testing.add(2, 2));
     }
     
     @org.junit.jupiter.api.Test
