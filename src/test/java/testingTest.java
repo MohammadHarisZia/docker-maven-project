@@ -17,9 +17,15 @@ class testingTest {
 
         );
     }
-
     
+    @org.junit.jupiter.api.Test
+    void div() {
+        assertAll(() -> assertEquals(1, testing.divide(2, 2)),
+                () -> assertEquals(-1, testing.divide(2, -2)),
+                () -> assertEquals(1, testing.divide(-2, -2))
+        );
 
+    }
     
 
     @org.junit.jupiter.api.Test
